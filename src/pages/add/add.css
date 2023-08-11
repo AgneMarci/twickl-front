@@ -1,0 +1,95 @@
+.add {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url('../../assets/add.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 50%;
+    height: flex;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .box h1 { 
+    font-size: 30px;
+    font-weight: 20;
+  }
+  
+  .addForm {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex; /* Align elements to the start of the column */
+  }
+
+  .pictureBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .pictureBox h2 {
+    font-size: 20px;
+    font-weight:500;
+    margin: 10px;
+  }
+  
+  .fileUpload {
+    display: none; /* Hide the default file input */
+  }
+  
+  .fileButton {
+    width: 40%;
+    padding: 5px 5px;
+    background-color: rgb(111, 170, 103);
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+  }
+  
+  .fileButton:hover {
+    background-color: rgb(85, 134, 75);
+  }
+  
+  .fileDisplay {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .box input{
+    flex: 1;
+    width: 57%;
+    margin: 10px 10px 0px 0px;
+    padding: 10px;
+  }
+
+  .box select{
+    flex: 1;
+    width: 60%;
+    margin: 10px 10px 0px 0px;
+    padding: 10px;
+  
+  }
+    
+  .box button {
+    width: 40%; 
+    border: none;
+    padding: 15px 20px;
+    background-color: rgb(111, 170, 103);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  

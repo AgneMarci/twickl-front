@@ -1,0 +1,49 @@
+.newsletter {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.newsletter .news {
+  font-size: 50px;
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+
+.newsletter .description {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.inputcontainer {
+  width: 50%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+}
+
+.inputcontainer input {
+  border: none;
+  flex: 8;
+  padding-left: 20px;
+}
+
+.inputcontainer button {
+  flex: 1;
+  border: none;
+  background-color:  rgb(111, 170, 103);
+  color: white;
+}
+
+.notification {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}

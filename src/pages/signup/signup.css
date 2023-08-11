@@ -1,0 +1,50 @@
+.signup {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('../../assets/signup.jpg');
+    background-size: cover;  
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper { 
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.wrapper h1 { 
+    font-size: 30px;
+    font-weight: 20;
+}
+.signupForm {
+    display: flex;
+    flex-wrap: wrap;  
+}
+.wrapper input{
+    flex: 1;
+    min-width: 40%;
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
+}
+.wrapper span{
+    font-size: 12px;
+    margin: 20px 0px;
+}
+.wrapper button{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: rgb(111, 170, 103);
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.wrapper button:hover {
+    opacity: 1;
+}

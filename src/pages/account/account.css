@@ -1,0 +1,71 @@
+.account {
+  width: 100vw;
+  min-height: 100vh; /* Change to min-height to ensure wrappers fit */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ), url('../../assets/takingPictureClothes.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Stack wrappers vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.wrapper3 {
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 30px; /* Add some spacing between wrappers */
+}
+
+.wrapper3 h1 {
+    font-size: 30px;
+    font-weight: 20;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profilePicture {
+    flex: 1;
+    text-align: center;
+  }
+  
+
+  .profileTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: left;
+    margin: 15px;
+  }
+  
+  .profileTable td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .wrapper3 button{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: rgb(111, 170, 103);
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+    
+}
+.wrapper3 button:hover {
+    opacity: 1;
+}
