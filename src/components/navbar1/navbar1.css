@@ -50,13 +50,6 @@
   overflow: hidden;
 }
 
-.leftSection a {
-  color: rgb(255, 255, 255);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
 .leftSection .dropdown-content a:hover {
   color: #736b6b;
 }
@@ -67,6 +60,26 @@
 
 .leftSection .dropdown:hover .dropdownButton {
   background-color: rgb(111, 170, 103);
+}
+
+.leftSection .dropdown.active .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.leftSection .dropdown-content a {
+  padding: 10px 20px;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: background-color 0.3s, padding-left 0.3s, border-left 0.3s;
+}
+
+.leftSection .dropdown-content a:hover {
+  background-color: rgb(111, 170, 103);
+  padding-left: 30px;
+  border-left: 2px solid rgb(111, 170, 103);
 }
 
 .leftSection .searchBar {
@@ -122,42 +135,6 @@
   margin-left: 20px;
   font-size: 25px;
 }
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgb(111, 170, 103);
-  box-shadow: 0px 3px 5px -1px #ccc;
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
-}
-
-.dropdown.active .dropdown-content {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.dropdown-content.open {
-  display: block;
-}
-
-.dropdown-content a {
-  padding: 10px 20px;
-  display: block;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  transition: background-color 0.3s, padding-left 0.3s, border-left 0.3s;
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(111, 170, 103);
-  padding-left: 30px;
-  border-left: 2px solid rgb(111, 170, 103);
-}
 
 .cartIconContainer {
   position: relative;
@@ -173,4 +150,65 @@
   padding: 3px 6px;
   font-size: 12px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar1 {
+    justify-content: center;
+    padding: 10px 0x;
+  }
+  .rightSection a {
+    margin-left: 0px;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .leftSection .dropdownButton{
+    font-size: 10px;
+  }
+  .leftSection .center h1{
+    font-size: 20px;
+    text-shadow: none;
+  }
+  .leftSection .searchBar input {
+    padding: 3px 5px;
+    margin-right: 5px;
+  }
+  .leftSection .searchBar button {
+    padding: 3px 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar1 {
+    justify-content: center;
+    padding: 0px 0px;
+    height: 60px;
+  }
+  .leftSection,
+  .rightSection {
+    font-size: 20px;
+  }
+  .rightSection a {
+    margin-left: 0px;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .cartCount {
+    top: -4px;
+    right: -4px;
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+  .leftSection .searchBar,
+  .leftSection .searchBar input,
+  .leftSection .searchBar button {
+    display: none;
+  }
+  .leftSection .dropdownButton{
+    font-size: 10px;
+  }
+  .leftSection .center h1{
+    font-size: 15px;
+    text-shadow: none;
+  }
 }

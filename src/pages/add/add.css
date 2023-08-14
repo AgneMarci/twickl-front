@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: center;
   }
-  
   .box {
     width: 50%;
     height: flex;
@@ -27,8 +26,8 @@
   
   .addForm {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex; /* Align elements to the start of the column */
+    flex-direction: column; 
+    align-items: flex; 
   }
 
   .pictureBox {
@@ -45,7 +44,7 @@
   }
   
   .fileUpload {
-    display: none; /* Hide the default file input */
+    display: none; 
   }
   
   .fileButton {
@@ -92,4 +91,27 @@
     cursor: pointer;
     margin-top: 20px;
   }
+
+  @media only screen and (max-width: 1024px) {
+    .box {
+      width: 70%;
+      padding: 10px;
+      
+    }
+  } 
+  @media only screen and (max-width: 600px) {
+    .box {
+      width: 90%;
+      padding: 0px;
+    }
+    .box h1 { 
+      font-size: 20px;
+      font-weight: normal;
+    }
+  .box button {
+    width: 50%; 
+    padding: 4px 5px;
+    margin: 10px;
+  }
+}
   

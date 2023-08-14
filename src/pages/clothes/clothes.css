@@ -7,11 +7,11 @@
 }
 
 .product img {
-  width: 80%;
+  width: 90%;
   height: 300px; 
   object-fit: cover; 
-  
 }
+
 .iconsContainer {
   opacity: 0;
   width: 100%;
@@ -37,19 +37,20 @@
   margin-bottom: 5px;
 }
 
-.description b {
+.description p1 {
   align-self: center; 
   font-size: 20px;
-  color: rgb(0, 0, 0);
-  margin: 5px;
-}
-.description p {
-  align-self: center; 
-  font-size: 20px;
+  font-weight: bold;
   color: rgb(0, 0, 0);
   margin: 5px;
 }
 
+.description p2 {
+  align-self: center; 
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+}
 
 .product .imageContainer {
   flex: 1;
@@ -75,15 +76,17 @@
   border: none;
   cursor: pointer;
 }
+
 .product .imageContainer:hover .icon {
   visibility: visible; 
-  }
+}
   
-  .product .icon:hover {
+.product .icon:hover {
   background-color: transparent;
   transform: scale(1.1) translate(-30%, -30%);
-  }
-  .product .imageContainer:hover .iconsContainer {
-    opacity: 3; 
-  }
+}
+
+.product .imageContainer:hover .iconsContainer {
+  opacity: 3; 
+}
   

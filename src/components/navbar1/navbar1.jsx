@@ -34,24 +34,24 @@ export const Navbar1 = () => {
           <button>SEARCH</button>
         </div>
         <div className="center">
-          <h1>Twickl</h1>
+          <h1 className="navbar-logo">Twickl</h1>
         </div>
       </div>
       <div className="rightSection">
-        <NavLink to="/add">START SELLING</NavLink>
-        <NavLink to="/login">SIGN UP|LOG IN</NavLink>
-        <NavLink to="/account" style={{ fontSize: "25px" }}>
-          <AccountCircle style={{ fontSize: "30px" }} />
+        <NavLink className="navbarLink" to="/add">START SELLING</NavLink>
+        <NavLink className="navbarLink" to="/login">SIGN UP|LOG IN</NavLink>
+        <NavLink to="/account">
+          <AccountCircle className="icon-style" />
         </NavLink>
-        <NavLink to="/" style={{ fontSize: "25px" }}>
-          <HomeOutlined style={{ fontSize: "30px" }} />
+        <NavLink to="/">
+          <HomeOutlined className="icon-style" />
         </NavLink>
-        <NavLink to="/cart" style={{ fontSize: "25px" }}>
-        <div className="cartIconContainer">
-          <ShoppingCartOutlined style={{ fontSize: "30px" }} />
-          {totalCartCount > 0 && <span className="cartCount">{totalCartCount}</span>}
-        </div>
-      </NavLink>
+        <NavLink to="/cart">
+          <div className="cartIconContainer">
+            <ShoppingCartOutlined className="icon-style" />
+            {totalCartCount > 0 && <span className="cartCount">{totalCartCount}</span>}
+          </div>
+        </NavLink>
       </div>
     </div>
   );

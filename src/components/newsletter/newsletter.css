@@ -4,13 +4,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  margin: 40px;
 }
 
 .newsletter .news {
   font-size: 50px;
   margin-bottom: 5px;
-  margin-top: 1px;
+  margin-top: 40px;
 }
 
 .newsletter .description {
@@ -45,5 +45,26 @@
     font-size: 15px;
     font-weight: 300;
     margin-bottom: 20px;
+} 
 
+@media only screen and (max-width: 600px) {
+  .newsletter .news {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .newsletter .description {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .inputcontainer {
+    height: 30px;
+    background-color: white;
+  }
+  .inputcontainer input {
+    padding-left: 10px;
+  }
+  .notification {
+      font-size: 10px;
+      margin-bottom: 10px;
+  } 
 }

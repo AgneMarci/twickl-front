@@ -1,16 +1,27 @@
 .footer {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  
-  h1 {
-    color: black;
+
+  .leftFooter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
   }
-  
-  p {
-    margin: 20px 0px;
+
+  .leftFooter h2 {
+    margin-bottom: 0px;
+    font-size: 25px;
   }
-  
-  .socialContainer {
+
+  .leftFooter p {
+    
+  }
+
+  .leftFooter .socialContainer {
     display: flex;
   }
   
@@ -22,35 +33,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
     cursor: pointer;
-  }
-  
-  .leftFooter {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: flex-start;
-    margin-left: 40px;
   }
   
   .centerFooter {
     flex: 1;
-    padding: 20px;
+    padding: 30px;
   }
 
   .footerNavLink {
     color: black;
   }
   
-
-  h2 {
-    margin-bottom: 30px;
+  .centerFooter h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
   }
   
-  
-  ul {
+  .centerFooter ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -58,7 +58,7 @@
     flex-wrap: wrap;
   }
   
-  li {
+  .centerFooter li {
     width: 50%;
     margin-bottom: 10px;
     cursor: pointer;
@@ -68,21 +68,52 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     align-items: flex-start;
+  }
 
+  .rightFooter h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
   }
   
-  p1,
+  .rightFooter p1,
   p2 {
     display: flex;
     align-items: center;
     margin-bottom: 10px; 
+    cursor: pointer;
   }
   
   .rightFooter img {
     margin: auto; 
     max-width: 100%; 
+  }
+
+  @media only screen and (max-width: 600px) {
+    .leftFooter p {
+      margin: 10px 0px;
+    }
+    .socialIcon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    .leftFooter {
+      padding: 10px;
+      margin-left: 20px;
+    }
+    .rightFooter {
+      padding: 10px;
+    }
+    
+    .rightFooter p1,
+    p2 {
+      margin-bottom: 5px; 
+    }
+    .centerFooter{
+      display: none;
+    }
   }
   
 

@@ -48,3 +48,24 @@
 .wrapper button:hover {
     opacity: 1;
 }
+@media only screen and (max-width: 600px) {
+    .wrapper { 
+        width: 70%;
+        padding: 10px;
+    }
+    .wrapper h1 { 
+        font-size: 20px;
+    }
+    .wrapper input{
+        min-width: 40%;
+        margin: 10px 5px 0px 0px;
+        padding: 8px;
+    }
+    .wrapper span{
+        font-size: 10px;
+        margin: 10px 0px;
+    }
+    .wrapper button{
+        padding: 12px 15px;
+    }
+}

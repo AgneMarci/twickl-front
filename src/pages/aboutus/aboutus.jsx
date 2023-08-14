@@ -9,7 +9,7 @@ export const Aboutus = () => {
     <div className="container2">
       <div className="infoContainer">
         <h1 className="title">TWICKL</h1>
-        <p className="desc">
+        <p className="description">
           Our platform is for you. You, who wants to sell or buy clothes.<br>
           </br>We want to make a second-hand clothes your first choice.<br>
           </br>Buy what you need and sell things, that you don't need.<br></br>

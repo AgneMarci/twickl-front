@@ -28,8 +28,8 @@ export const Product = (props) => {
         </div>
       </div>
       <div className="description">
-        <b>{productName}</b>
-        <p>€{price}</p>
+        <p1>{productName}</p1>
+        <p2>€{price}</p2>
       </div>
     </div>
   );

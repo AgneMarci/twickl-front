@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className='leftFooter'>
-            <h1>Twickl</h1>
+            <h2>Twickl</h2>
             <p>We are Twickl MB, based in Lithuania.</p>
             <div className='socialContainer'>
                 <div className='socialIcon'>
