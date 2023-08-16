@@ -9,8 +9,8 @@
     animation: moveLeftToRight 15s linear infinite;
     white-space: nowrap;
     overflow: hidden;
-    z-index: 100;
-   
+    font-size: 15px;
+    font-weight: 550; 
   }
   
   @keyframes moveLeftToRight {

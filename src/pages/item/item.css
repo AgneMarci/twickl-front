@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
     background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -15,8 +15,8 @@
   }
   
   .imageItem img {
-    width: 100%;
-    max-height: 90vh;
+    width: 90%;
+    max-height: 80vh;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -29,7 +29,7 @@
     font-weight: 700;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     margin-left: 24;
   }
   
@@ -46,6 +46,7 @@
   .button {
     text-align: center;
     margin-top: 20px;
+    position: relative;
   }
   
   .button button {
@@ -65,9 +66,15 @@
   }
 
  .button .notificationAdded{
-    align-self: center; 
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    margin: 5px;
-  }
+  position: absolute;
+  top: 10;  /* This will place it at the top edge of the button */
+  right: 250px;
+  padding: 10px 20px;
+  background-color: rgb(111, 170, 103);
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+  transition: opacity 0.5s;
+  z-index: 1002; 
+}
   

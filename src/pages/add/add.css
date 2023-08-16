@@ -49,12 +49,14 @@
   
   .fileButton {
     width: 40%;
-    padding: 5px 5px;
+    padding: 10px 10px;
     background-color: rgb(111, 170, 103);
     color: white;
     cursor: pointer;
     border: none;
     margin: 10px;
+    font-size: 15px;
+    font-weight: 500;
   }
   
   .fileButton:hover {
@@ -67,19 +69,11 @@
     text-align: center;
   }
   
-  .box input{
-    flex: 1;
-    width: 57%;
-    margin: 10px 10px 0px 0px;
-    padding: 10px;
-  }
-
-  .box select{
-    flex: 1;
+  .box input, .box select {
     width: 60%;
-    margin: 10px 10px 0px 0px;
+    margin: 10px;
     padding: 10px;
-  
+    box-sizing: border-box;
   }
     
   .box button {
@@ -90,6 +84,8 @@
     color: white;
     cursor: pointer;
     margin-top: 20px;
+    font-size: 15px;
+    font-weight: 550;
   }
 
   @media only screen and (max-width: 1024px) {
@@ -100,6 +96,19 @@
     }
   } 
   @media only screen and (max-width: 600px) {
+    .pictureBox {
+      margin-bottom: 5px;
+    }
+    
+    .pictureBox h2 {
+      font-size: 15px;
+      font-weight:400;
+      margin: 5px;
+    }
+
+    .fileButton {
+      margin: 5px;
+    }
     .box {
       width: 90%;
       padding: 0px;
@@ -110,7 +119,7 @@
     }
   .box button {
     width: 50%; 
-    padding: 4px 5px;
+    padding: 6px 10px;
     margin: 10px;
   }
 }

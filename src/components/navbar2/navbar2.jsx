@@ -7,18 +7,18 @@ export const Navbar2 = () => {
   const [isMenDropdownOpen, setIsMenDropdownOpen] = useState(false);
 
   return ( 
-    <nav className="primary-navigation">
-      <div className="nav-links">
+    <nav className="primaryNavigation">
+      <div className="navLinks">
         <NavLink to="/shop">SHOP</NavLink>
         <div 
-          className="dropdown-container"
+          className="dropdownContainer"
           onMouseEnter={() => setIsWomenDropdownOpen(true)}
           onMouseLeave={() => setIsWomenDropdownOpen(false)}
         >
           <NavLink to="/women" >WOMEN </NavLink>
           {isWomenDropdownOpen && (
-            <ul className="dropdownNavbar">
-              <li><NavLink to="/women/all">ALL</NavLink></li>
+            <ul className="navList dropdownNavbar">
+              <li><NavLink to="/women">ALL</NavLink></li>
               <li><NavLink to="/women/shoes">SHOES</NavLink></li>
               <li><NavLink to="/women/bottoms">BOTTOMS</NavLink></li>
               <li><NavLink to="/women/tops">TOPS</NavLink></li>
@@ -28,14 +28,14 @@ export const Navbar2 = () => {
           )}
         </div>
         <div 
-          className="dropdown-container"
+          className="dropdownContainer"
           onMouseEnter={() => setIsMenDropdownOpen(true)}
           onMouseLeave={() => setIsMenDropdownOpen(false)}
         >
           <NavLink to="/men" >MEN </NavLink>
           {isMenDropdownOpen && (
-            <ul className="dropdownNavbar">
-              <li><NavLink to="/men/all">ALL</NavLink></li>
+            <ul className="navList dropdownNavbar">
+              <li><NavLink to="/men">ALL</NavLink></li>
               <li><NavLink to="/men/shoes">SHOES</NavLink></li>
               <li><NavLink to="/men/bottoms">BOTTOMS</NavLink></li>
               <li><NavLink to="/men/tops">TOPS</NavLink></li>

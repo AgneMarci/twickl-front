@@ -1,0 +1,50 @@
+.deleteModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* A dark transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.deleteModalContent {
+  width: 50%;
+  padding: 20px;
+  background-color: white; /* Non-transparent background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteModalContent p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.deleteModalContent .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.deleteModalContent button {
+  width: 40%;
+  border: none;
+  padding: 15px 20px;
+  background-color: rgb(111, 170, 103);
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  opacity: 0.8;
+  transition: 0.3s;
+  margin: 20px 15px;
+}
+
+.deleteModalContent button:hover {
+  opacity: 1;
+}

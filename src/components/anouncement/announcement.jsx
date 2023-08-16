@@ -4,7 +4,7 @@ import "./announcement.css";
 export const Announcement = () => {
   return (
     <div className="announcement">
-        Free shipping only Today!
+        FREE SHIPPING ONLY TODAY!
     </div>
   )
 };

@@ -211,4 +211,9 @@
     font-size: 15px;
     text-shadow: none;
   }
+  .leftSection .dropdown-content {
+    font-size: 10px;
+    width: 50px;
+    border-radius: 5px;
+  }
 }

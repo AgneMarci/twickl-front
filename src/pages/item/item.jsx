@@ -35,7 +35,7 @@ const [showNotification, setShowNotification] = useState(false);
             <button className="addToCartButton" onClick={() => handleAddToCart(id)}>
               ADD TO CART
               </button>
-              {showNotification && <div className="notificationAdded">Added!</div>}
+              {showNotification && <div className="notificationAdded">ADDED</div>}
           </div>
         </div>
       </div>

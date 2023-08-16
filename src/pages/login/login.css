@@ -43,11 +43,14 @@
     margin-bottom: 10px;
     opacity: 0.8;
     transition: 0.3s;
+    font-size: 15px;
+    font-weight: 550;
 }
 .wrapper2 button:hover {
     opacity: 1;
 }
-.wrapper2 a{
+.wrapper2 a, 
+.passwordResetText {
   margin: 5px 0px;
   font-size: 12px;
   text-decoration: underline;
@@ -59,7 +62,6 @@
 .wrapper2 a:hover{
     opacity: 1;
 }
-
 @media only screen and (max-width: 600px) {
     .wrapper2 { 
         width: 70%;

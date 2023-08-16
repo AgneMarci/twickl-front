@@ -1,0 +1,113 @@
+.modalWrapper {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 30px; 
+}
+
+.modalContent {
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(226, 234, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalContent h1 {
+    font-size: 30px;
+    font-weight: 20;
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profilePicture {
+    flex: 1;
+    text-align: center;
+}
+
+.profileTableEdit {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: left;
+    margin: 15px;
+}
+
+.profileTableEdit td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.profileTableEdit tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.profileTableEdit input {
+    width: 100%;          
+    border: none;        
+    background: none;    
+    outline: none;        
+    padding: 8px;   
+}
+
+.buttonContainerEdit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.buttonContainerEdit button {
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: rgb(111, 170, 103);
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    opacity: 0.8;
+    transition: 0.3s;  
+}
+
+.buttonContainerEdit button:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 860px) {
+  .contentWrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .modalWrapper{
+    padding: 5px;
+  }
+    .modalContent {
+    width: 70%;
+    padding: 5px;
+  }
+  .modalContent h1 {
+    font-size: 15px;
+  }
+  .contentWrapper {
+    flex-direction: column;
+  }
+  .buttonContainerEdit button {
+    padding: 8px 10px;
+    margin: 5px;
+  }
+}

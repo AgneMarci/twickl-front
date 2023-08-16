@@ -3,10 +3,13 @@ import "./login.css";
 import Newsletter from "../../components/newsletter/newsletter";
 import Footer from "../../components/footer/footer";
 import { NavLink } from "react-router-dom";
+import ForgotPasswordPopup from '../../components/forgotPasswordPopup/forgotPasswordPopup';
 
 export const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const [showForgotPopup, setShowForgotPopup] = useState(false);
 
   const loginData = {
     username,
@@ -48,25 +51,25 @@ export const Login = () => {
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              required
             />
             <input
               placeholder="Password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required
             />
             <button type="submit">SIGN IN</button>
-            <NavLink to="/passwordchange">
+            <p className="passwordResetText" onClick={() =>
+               setShowForgotPopup(true)}>
               DO NOT REMEMBER THE PASSWORD?
-            </NavLink>
+            </p>
             <NavLink to="/signup">CREATE A NEW ACCOUNT</NavLink>
           </form>
         </div>
       </div>
       <Newsletter />
       <Footer />
+      {showForgotPopup && <ForgotPasswordPopup onClose={() => setShowForgotPopup(false)} />}
     </div>
   );
 };

@@ -80,7 +80,7 @@ export const Add = () => {
         <div className='pictureBox'>
           <h2>Picture</h2>
           <label htmlFor="fileInput" className="fileButton">
-           Upload
+           UPLOAD
           </label>
           <input
             type="file"

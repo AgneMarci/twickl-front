@@ -16,8 +16,8 @@ export const CartItem = (props) => {
         <p>
           <b>{productName}</b>
         </p>
-        <p> Price: €{price}</p>
-        <button onClick={handleRemoveFromCart}>Remove</button>
+        <p> {price} €</p>
+        <button onClick={handleRemoveFromCart}>REMOVE</button>
       </div>
     </div>
   );

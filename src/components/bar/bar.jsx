@@ -7,7 +7,7 @@ const Bar = () => {
       <div className="barInfoContainer">
         <h1 className="barTitle">Twickl - think twice before buying new clothes!</h1>
         <button className="barButton" onClick={() => window.location.href = "/login"}>
-          Sign up|Log in
+          SIGN UP|LOG IN
         </button>
       </div>
     </div>
