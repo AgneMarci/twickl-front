@@ -78,7 +78,7 @@ export const Add = () => {
         <h1>SELL YOUR PIECE</h1>
         <form className='addForm' onSubmit={handleSubmit}>
         <div className='pictureBox'>
-          <h2>Picture</h2>
+          <h2>PICTURE</h2>
           <label htmlFor="fileInput" className="fileButton">
            UPLOAD
           </label>

@@ -89,6 +89,7 @@
 .product .imageContainer:hover .iconsContainer {
   opacity: 3; 
 }
+
 @media only screen and (max-width: 600px) {
   .products {
     padding: 10px;
@@ -111,19 +112,6 @@
   .product .imageContainer {
     width: 150px;
     height: 200px;
-  }
-  
-  .product .icon {
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    transition: all 0.5s ease;
-    border: none;
-    cursor: pointer;
   }
 }
   

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ShopContext } from "../../context/shop-context";
 import { PRODUCTS } from "../../products";
 import { CartItem } from "./cart-item";
@@ -11,6 +11,8 @@ export const Cart = () => {
   const { cartItems, getTotalCartAmount, removeFromCart } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
   const navigate = useNavigate();
+
+  const [showCheckoutPopup, setShowCheckoutPopup] = useState(false);
 
   return (
     <div className="main">
@@ -30,12 +32,22 @@ export const Cart = () => {
           <div className="checkout">
             <p>Subtotal: {totalAmount} €</p>
             <button onClick={() => navigate("/")}>CONTINUE</button>
-            <button>CHECKOUT</button>
+            <button onClick={() => setShowCheckoutPopup(true)}>CHECKOUT</button>
           </div>
         ) : (
           <h1>Your Cart is Empty</h1>
         )}
       </div>
+      {showCheckoutPopup && (
+  <div className="checkout-popup">
+    <p>Congratulations! Now just wait for your purchase.</p>
+    <button onClick={() => {
+      setShowCheckoutPopup(false);
+      navigate("/shop");
+    }}>X</button>
+  </div>
+)}
+
       <Newsletter />
       <Footer />
     </div>

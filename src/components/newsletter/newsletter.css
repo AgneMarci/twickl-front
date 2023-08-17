@@ -39,6 +39,13 @@
   border: none;
   background-color:  rgb(111, 170, 103);
   color: white;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.inputcontainer button:hover{
+    opacity: 3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .notification {

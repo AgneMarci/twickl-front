@@ -1,7 +1,7 @@
 import React, {useContext } from "react";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { NavLink } from "react-router-dom"; 
-import { Search } from "@mui/icons-material";
+import { Delete, Search } from "@mui/icons-material";
 import "./clothes.css";
 import { ShopContext } from '../../context/shop-context';
 
@@ -13,6 +13,7 @@ export const Product = (props) => {
   const handleAddToCart = (productId) => {
     addToCart(productId);
   }
+  
 
   return (
     <div className="product">
@@ -24,6 +25,9 @@ export const Product = (props) => {
           </NavLink>
          <button className="icon" onClick={() => handleAddToCart(id)}>
             <ShoppingCartOutlinedIcon style={{ color: "black", fontSize: "30px" }} />
+          </button>
+          <button className="icon" onClick={() => handleAddToCart(id)}>
+            <Delete style={{ color: "black", fontSize: "30px" }} />
           </button>
         </div>
       </div>

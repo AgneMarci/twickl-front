@@ -48,19 +48,22 @@
   }
   
   .fileButton {
-    width: 40%;
+    width:40%;
     padding: 10px 10px;
-    background-color: rgb(111, 170, 103);
-    color: white;
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
     cursor: pointer;
-    border: none;
+    border: 1px solid #000; 
     margin: 10px;
     font-size: 15px;
     font-weight: 500;
+    opacity: 0.8;
+    transition: 0.3s;
   }
-  
+
   .fileButton:hover {
-    background-color: rgb(85, 134, 75);
+    opacity: 3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
   
   .fileDisplay {
@@ -86,6 +89,13 @@
     margin-top: 20px;
     font-size: 15px;
     font-weight: 550;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  .box button:hover{
+      opacity: 1;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
 
   @media only screen and (max-width: 1024px) {
