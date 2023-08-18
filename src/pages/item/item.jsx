@@ -29,8 +29,8 @@ const [showNotification, setShowNotification] = useState(false);
         </div>
         <div className='informationItem'>
           <h1>Sweater</h1>
-          <p>I bought this sweater, but never wore it.</p>
           <h2>€ 12 </h2>
+          <p>I bought this sweater, but never wore it.</p>
           <div className='button'>
             <button className="addToCartButton" onClick={() => handleAddToCart(id)}>
               ADD TO CART
