@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "./signup.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom"; 
 import Newsletter from "../../components/newsletter/newsletter";
 import Footer from "../../components/footer/footer";
 
 export const Signup = () => {
+  const navigate = useNavigate(); 
+
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
@@ -11,37 +15,29 @@ export const Signup = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const signupData = {
-    name,
-    lastName,
-    username,
-    email,
-    password,
-    confirmPassword,
-  };
-
   const handleSignUp = async (e) => {
     e.preventDefault();
-    console.log(signupData)
+    const signupData = {
+      name,
+      lastName,
+      username,
+      email,
+      password,
+      confirmPassword,
+    };
+    console.log(signupData);
 
     try {
-      const response = await fetch("your-api-endpoint/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(signupData),
-      });
-
-      if (response.ok) {
-        // User successfully signed up
+      const response = await axios.post("http://localhost:8080/register", signupData);
+      
+      if (response.status === 200) {
         console.log("User signed up successfully.");
+        navigate("/shop"); 
       } else {
-        // Error signing up
         console.error("Error signing up.");
       }
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error:", error.response ? error.response.data : error.message);
     }
   };
 

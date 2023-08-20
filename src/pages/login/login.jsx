@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./login.css";
+import axios from "axios";
 import Newsletter from "../../components/newsletter/newsletter";
 import Footer from "../../components/footer/footer";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom"; 
 import ForgotPasswordPopup from '../../components/forgotPasswordPopup/forgotPasswordPopup';
 
 export const Login = () => {
@@ -11,33 +12,27 @@ export const Login = () => {
 
   const [showForgotPopup, setShowForgotPopup] = useState(false);
 
-  const loginData = {
-    username,
-    password,
-  };
+  const navigate = useNavigate();  
+
   const handleLogin = async (e) => {
     e.preventDefault();
-    console.log(loginData)
-
+    const loginData = {
+      username,
+      password,
+    };
+    console.log(loginData);
 
     try {
-      const response = await fetch("your-api-endpoint/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(loginData),
-      });
-
-      if (response.ok) {
-        // User successfully logged in
+      const response = await axios.get("http://localhost:8080/login", loginData);
+      
+      if (response.status === 200) {
         console.log("User logged in successfully.");
+        navigate("/shop"); 
       } else {
-        // Error logging in
         console.error("Error logging in.");
       }
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error:", error.response ? error.response.data : error.message);
     }
   };
 
