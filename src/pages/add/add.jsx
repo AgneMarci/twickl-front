@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Newsletter from '../../components/newsletter/newsletter';
 import Footer from '../../components/footer/footer';
+import axios from 'axios';
 import "./add.css";
 
 export const Add = () => {
+  const { t } = useTranslation();
   const [file, setFile] = useState(null);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -19,10 +22,22 @@ export const Add = () => {
     setGender(selectedGender);
 
     if (selectedGender === 'men') {
-      setAvailableCategories(['Shoes', 'Bottoms', 'Tops', 'Suits', 'Other']);
+      setAvailableCategories([
+        t('categories.men.Shoes'),
+        t('categories.men.Bottoms'),
+        t('categories.men.Tops'),
+        t('categories.men.Suits'),
+        t('categories.men.Other')
+      ]);
       setAvailableSizes(['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL', 'Other']);
     } else {
-      setAvailableCategories(['shoes', 'bottoms', 'tops', 'dresses', 'other']);
+      setAvailableCategories([
+        t('categories.women.shoes'),
+        t('categories.women.bottoms'),
+        t('categories.women.tops'),
+        t('categories.women.dresses'),
+        t('categories.women.other')
+      ]);
       setAvailableSizes(['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL', 'Other']);
     } 
   };
@@ -53,15 +68,14 @@ export const Add = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
-    
     try {
-      const response = await fetch('your-api-endpoint', {
-        method: 'POST',
-        body: formData,
+      const response = await axios.post('http://localhost:8080/add', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
       });
 
-      if (response.ok) {
+      if (response.status === 200) {
         console.log('Item uploaded successfully.');
       } else {
         console.error('Item upload failed.');
@@ -69,18 +83,18 @@ export const Add = () => {
     } catch (error) {
       console.error('Error submitting the form:', error);
     }
-  }
+  };
 
   return (
     <div className='main'>
     <div className='add'>
       <div className='box'>
-        <h1>SELL YOUR PIECE</h1>
+        <h1>{t('add.sellYourPiece')}</h1>
         <form className='addForm' onSubmit={handleSubmit}>
         <div className='pictureBox'>
-          <h2>PICTURE</h2>
+          <h2>{t('add.picture')}</h2>
           <label htmlFor="fileInput" className="fileButton">
-           UPLOAD
+           {t('add.upload')}
           </label>
           <input
             type="file"
@@ -94,19 +108,19 @@ export const Add = () => {
         </div>
           <input
             className="inputField"
-            placeholder="Title"
+            placeholder={t('add.titlePlaceholder')}
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
           <input
             className="inputDescription"
-            placeholder="Describe your item"
+            placeholder={t('add.descriptionPlaceholder')}
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
           <input
             className="inputField"
-            placeholder="Price €"
+            placeholder={t('add.pricePlaceholder')}
             value={price}
             onChange={(e) => setPrice(e.target.value)}
           />
@@ -115,16 +129,16 @@ export const Add = () => {
             value={gender}
             onChange={handleGenderChange}
            >
-              <option value="">Select gender</option>
-              <option value="men">Men</option>
-              <option value="women">Women</option>
+              <option value="">{t('add.selectGender')}</option>
+              <option value="men">{t('add.men')}</option>
+              <option value="women">{t('add.women')}</option>
             </select>
             <select
               className="inputField"
               value={category}
               onChange={handleCategoryChange}
             >
-              <option value="">Select category</option>
+              <option value="">{t('add.selectCategory')}</option>
               {availableCategories.map((cat) => (
                 <option key={cat} value={cat}>
                   {cat}
@@ -136,14 +150,14 @@ export const Add = () => {
               value={size}
               onChange={(e) => setSize(e.target.value)}
             >
-              <option value="">Select size</option>
+              <option value="">{t('add.selectSize')}</option>
               {availableSizes.map((s) => (
                 <option key={s} value={s}>
                   {s}
                 </option>
               ))}
             </select>
-            <button type="submit">SUBMIT</button>
+            <button type="submit">{t('add.submit')}</button>
           </form>
         </div>
       </div>

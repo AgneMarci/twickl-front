@@ -16,70 +16,20 @@
   display: flex;
   align-items: center;
 }
-
-.leftSection .dropdown {
+.leftSection .languageDropdown {
   position: relative;
   display: inline-block;
 }
 
-.leftSection .dropdownButton {
+.leftSection .dropdownSelection {
+  appearance: none;
   background-color: rgb(111, 170, 103);
   color: rgb(255, 255, 255);
-  padding: 5px 16px;
-  font-size: 25px;
+  padding: 5px 15px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
-}
-
-.leftSection .dropdownButton:hover {
-  color: #736b6b;
-}
-
-.leftSection .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(111, 170, 103);
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  margin: 0px;
-  width: 70px;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  cursor: pointer;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.leftSection .dropdown-content a:hover {
-  color: #736b6b;
-}
-
-.leftSection .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.leftSection .dropdown:hover .dropdownButton {
-  background-color: rgb(111, 170, 103);
-}
-
-.leftSection .dropdown.active .dropdown-content {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.leftSection .dropdown-content a {
-  padding: 10px 20px;
-  display: block;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  transition: background-color 0.3s, padding-left 0.3s, border-left 0.3s;
-}
-
-.leftSection .dropdown-content a:hover {
-  background-color: rgb(111, 170, 103);
-  padding-left: 30px;
-  border-left: 2px solid rgb(111, 170, 103);
+  margin-right: 10px;
 }
 
 .leftSection .searchBar {
@@ -205,16 +155,7 @@
   .leftSection .searchBar button {
     display: none;
   }
-  .leftSection .dropdownButton{
+  .leftSection .dropdownSelection{
     font-size: 10px;
-  }
-  .leftSection .center h1{
-    font-size: 15px;
-    text-shadow: none;
-  }
-  .leftSection .dropdown-content {
-    font-size: 10px;
-    width: 50px;
-    border-radius: 5px;
   }
 }

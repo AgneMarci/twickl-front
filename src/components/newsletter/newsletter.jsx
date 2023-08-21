@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Send } from '@mui/icons-material';
 import './newsletter.css';
+import { useTranslation } from 'react-i18next'; 
 
 const Newsletter = () => {
+  const { t } = useTranslation(); 
   const [showNotification, setShowNotification] = useState(false);
 
   const handleSendMessage = () => {
@@ -16,18 +18,18 @@ const Newsletter = () => {
   return (
     <div className='newsletter'>
       <h1 className='news'>
-        Newsletter
+        {t('newsletter.title')} 
       </h1>
       <p className='description'>
-        Get our hottest news first!
+        {t('newsletter.description')}
       </p>
       <div className='inputcontainer'>
-        <input placeholder='type your E-mail here' />
+        <input placeholder={t('newsletter.placeholder')} />
         <button onClick={handleSendMessage}>
           <Send />
         </button>
       </div>
-      {showNotification && <p className='notification'>Message Sent!</p>}
+      {showNotification && <p className='notification'>{t('newsletter.notification')}</p>}
     </div>
   );
 };

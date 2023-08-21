@@ -1,0 +1,135 @@
+{
+  "searchPlaceholder": "Ieškoti drabužių",
+  "searchButton": "IEŠKOTI",
+  "startSelling": "PARDUOTI",
+  "auth": "REGISTRUOTIS|PRISIJUNGTI",
+  "brandName": "Twickl",
+  "shop": "PARDUOTUVĖ",
+  "women": "MOTERYS",
+  "men": "VYRAI",
+  "all": "VISI",
+  "shoes": "BATAI",
+  "bottoms": "APAČIA",
+  "tops": "VIRŠUS",
+  "dressesSkirts": "SUKNELĖS, SIJONAI",
+  "suits": "KOSTIUMAI",
+  "other": "KITA",
+  "aboutUs": "APIE MUS",
+  "newsletter": {
+    "title": "Naujienlaiškis",
+    "description": "Gauk mūsų naujienas pirmas!",
+    "placeholder": "Įvesk el.paštą čia",
+    "notification": "Laiškas jums išsiųstas!"
+  },
+  "announcement": {
+    "shippingMessage": "NEMOKAMAS PRISTATYMAS TIK ŠIANDIEN!"
+  },
+  "bar": {
+    "title": "Twickl - pagalvokite dukart prieš perkant naujus drabužius!",
+    "buttonText": "UŽSIREGISTRUOTI|PRISIJUNGTI"
+  },
+  "deleteModal": {
+    "message": "Ar jūs tikrai norite ištrinti savo profilį?"
+  },
+  "editModal": {
+    "title": "DUOMENYS",
+    "name": "Vardas",
+    "lastName": "Pavardė",
+    "username": "Slapyvardis",
+    "email": "el.paštas",
+    "yourName": "Your name",
+    "yourLastName": "Your Last name",
+    "yourUsername": "Your Username",
+    "yourEmail": "Your Email"
+  },
+  "common": {
+    "yes": "TAIP",
+    "no": "NE",
+    "submit": "PATEIKTI",
+    "cancel": "ATŠAUKTI"
+  },
+  "footer": {
+    "description": "Mes esame „Twickl MB“, įsikūrusi Lietuvoje.",
+    "usefulLinks": "Naudingos nuorodos",
+    "contact": "Kontaktai"
+  },
+  "forgotPasswordPopup": {
+    "heading": "Prašome įvesti savo el. paštą, mes išsiųsime slaptažodžio keitimo nuorodą.",
+    "toastNotification": "Nuoroda išsiųsta!",
+    "Type your E-mail here": "Įrašykite savo el.paštą"
+  },
+  "aboutus": {
+    "title": "Twickl",
+    "description": "Mūsų tinklapis yra jums. Jums, kurie nori pirkti ar parduoti. Mes norime dėvėtus drabužius padaryti jūsų pirmu pasirinkimu. Parduok ko nenešioji, ar kas dulka spintoje.",
+    "startSelling": "PARDUOTI",
+    "startShopping": "PIRKTI"
+  },
+  "add": {
+    "sellYourPiece": "PARDUOK",
+    "picture": "NUOTRAUKA",
+    "upload": "ĮKELTI",
+    "titlePlaceholder": "Pavadinimas",
+    "descriptionPlaceholder": "Apibūdink savo prekę",
+    "pricePlaceholder": "kaina €",
+    "selectGender": "Kam skirta",
+    "men": "Vyrai",
+    "women": "Moterys",
+    "selectCategory": "Kategorija",
+    "selectSize": "Dydis",
+    "submit": "ĮKELTI"
+  },
+    "categories": {
+      "men": {
+        "Shoes": "Batai",
+        "Bottoms": "Apačia",
+        "Tops": "Viršus",
+        "Suits": "Kostiumai",
+        "Other": "Kita"
+      },
+      "women": {
+        "shoes": "Batai",
+        "bottoms": "Apačia",
+        "tops": "Viršus",
+        "dresses": "Suknelės",
+        "other": "Kita"
+      }
+    },
+  "productName": {
+    "sweater": "Megztinis",
+    "tee": "Marškinėliai",
+    "sneakers": "Sportbačiai",
+    "jeans": "Džinsai",
+    "shoes": "Batai",
+    "dress": "Suknelė",
+    "pants": "Kelnės",
+    "shorts": "Šortai"
+  },
+  "REMOVE": "PAŠALINTI",
+  "Your Cart Items": "Tavo prekės",
+  "CONTINUE": "TĘSTI",
+  "CHECKOUT": "NUPIRKTI",
+  "Your Cart is Empty": "Tavo krepšelis tuščias",
+  "Sweater": "Megztinis",
+  "€ 12": "€ 12",
+  "I bought this sweater, but never wore it.": "Pirkau jį, bet niekada nedevėjau.",
+  "ADD TO CART": "ĮDĖTI Į KREPŠELĮ",
+  "ADDED": "ĮDĖTA",
+  "LOG IN": "PRISIJUNGTI",
+  "Username": "Slapyvardis",
+  "Password": "slaptažodžis",
+  "SIGN IN": "PRISIJUNGTI",
+  "DO NOT REMEMBER THE PASSWORD?": "PAMIRŠAI SLAPTAŽODĮ?",
+  "CREATE A NEW ACCOUNT": "SUKURTI NAUJĄ PASKYRĄ",
+  "CREATE AN ACCOUNT": "SUKURTI PASKYRĄ",
+  "Last Name": "Pavardė",
+  "ACCOUNT DETAILS": "DUOMENYS",
+  "Name": "Vardas",
+  "Email": "el.paštas",
+  "EDIT": "REDAGUOTI",
+  "DELETE": "IŠTRINTI",
+  "YOUR ADDED ITEMS": "TAVO PRIDĖTI PRODUKTAI",
+  "Confirm Password": "Patvirtinti slaptažodį",
+  "By creating an account, I consent to the processing of my personal data in accordance with the": "Kurdamas paskyrą, sutinku, kad mano asmens duomenys būtų tvarkomi pagal",
+  "PRIVACY POLICY": "PRIVATUMO POLITIKĄ",
+  "CREATE": "SUKURTI"
+}

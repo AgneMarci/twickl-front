@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./login.css";
 import axios from "axios";
+import { useTranslation } from 'react-i18next';
 import Newsletter from "../../components/newsletter/newsletter";
 import Footer from "../../components/footer/footer";
 import { NavLink, useNavigate } from "react-router-dom"; 
 import ForgotPasswordPopup from '../../components/forgotPasswordPopup/forgotPasswordPopup';
 
 export const Login = () => {
+  const { t } = useTranslation();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,6 +22,7 @@ export const Login = () => {
       username,
       password,
     };
+
     console.log(loginData);
 
     try {
@@ -40,25 +43,25 @@ export const Login = () => {
     <div className="main">
       <div className="login">
         <div className="wrapper2">
-          <h1>LOG IN</h1>
+          <h1>{t('LOG IN')}</h1>
           <form className="loginForm" onSubmit={handleLogin}>
             <input
-              placeholder="Username"
+              placeholder={t('Username')}
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
             <input
-              placeholder="Password"
+              placeholder={t('Password')}
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit">SIGN IN</button>
+            <button type="submit">{t('SIGN IN')}</button>
             <p className="passwordResetText" onClick={() =>
                setShowForgotPopup(true)}>
-              DO NOT REMEMBER THE PASSWORD?
+              {t('DO NOT REMEMBER THE PASSWORD?')}
             </p>
-            <NavLink to="/signup">CREATE A NEW ACCOUNT</NavLink>
+            <NavLink to="/signup">{t('CREATE A NEW ACCOUNT')}</NavLink>
           </form>
         </div>
       </div>

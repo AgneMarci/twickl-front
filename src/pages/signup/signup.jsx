@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "./signup.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom"; 
+import { useTranslation } from 'react-i18next';
 import Newsletter from "../../components/newsletter/newsletter";
 import Footer from "../../components/footer/footer";
 
 export const Signup = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate(); 
 
   const [name, setName] = useState("");
@@ -45,52 +47,51 @@ export const Signup = () => {
     <div className="main">
       <div className="signup">
         <div className="wrapper">
-          <h1>CREATE AN ACCOUNT</h1>
+          <h1>{t('CREATE AN ACCOUNT')}</h1>
           <form className="signupForm" onSubmit={handleSignUp}>
             <input
-              placeholder="Name"
+              placeholder={t('Name')}
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
             />
             <input
-              placeholder="Last Name"
+              placeholder={t('Last Name')}
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               required
             />
             <input
-              placeholder="Username"
+              placeholder={t('Username')}
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
             />
             <input
-              placeholder="Email"
+              placeholder={t('Email')}
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <input
-              placeholder="Password"
+              placeholder={t('Password')}
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
             <input
-              placeholder="Confirm Password"
+              placeholder={t('Confirm Password')}
               type="password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
             <span>
-              By creating an account, I consent to the processing of my personal
-              data in accordance with the <b>PRIVACY POLICY</b>
+              {t('By creating an account, I consent to the processing of my personal data in accordance with the')} <b>{t('PRIVACY POLICY')}</b>
             </span>
-            <button type="submit">CREATE</button>
+            <button type="submit">{t('CREATE')}</button>
           </form>
         </div>
       </div>

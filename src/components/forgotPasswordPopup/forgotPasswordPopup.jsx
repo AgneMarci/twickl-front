@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Send } from '@mui/icons-material';
 import './forgotPasswordPopup.css';
+import { useTranslation } from 'react-i18next';
 
 const ForgotPasswordPopup = ({ onClose }) => {
+  const { t } = useTranslation();
   const [showNotification, setShowNotification] = useState(false);
-
+  
   const handleSendResetLink = () => {
     setShowNotification(true);
 
@@ -16,20 +18,20 @@ const ForgotPasswordPopup = ({ onClose }) => {
 
   return (
     <div className='forgotPasswordPopup'>
-      <div className="popupOverlay" onClick={onClose}></div> 
+      <div className="popupOverlay" onClick={onClose}></div>
       <div className="popupContent">
         <h1 className='heading'>
-          Please enter your email, we will send you a password change link.
+          {t('forgotPasswordPopup.heading')}
         </h1>
         <div className='passwordInputContainer'>
-          <input placeholder='Type your E-mail here' />
+        <input placeholder={t('forgotPasswordPopup.Type your E-mail here')} />
           <button onClick={handleSendResetLink}>
             <Send />
           </button>
         </div>
         {showNotification && 
         <div className="toastNotification">
-          Reset Link Sent!
+          {t('forgotPasswordPopup.toastNotification')}
         </div>}
       </div>
     </div>

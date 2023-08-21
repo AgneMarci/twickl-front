@@ -1,0 +1,136 @@
+{
+  "searchPlaceholder": "Search for clothes",
+  "searchButton": "SEARCH",
+  "startSelling": "START SELLING",
+  "auth": "SIGN UP|LOG IN",
+  "brandName": "Twickl",
+  "shop": "SHOP",
+  "women": "WOMEN",
+  "men": "MEN",
+  "all": "ALL",
+  "shoes": "SHOES",
+  "bottoms": "BOTTOMS",
+  "tops": "TOPS",
+  "dressesSkirts": "DRESSES, SKIRTS",
+  "suits": "SUITS",
+  "other": "OTHER",
+  "aboutUs": "ABOUT US",
+  "newsletter": {
+      "title": "Newsletter",
+      "description": "Get our hottest news first!",
+      "placeholder": "Type your E-mail here",
+      "notification": "Message Sent!"
+  },
+  "announcement": {
+      "shippingMessage": "FREE SHIPPING ONLY TODAY!"
+  },
+  "bar": {
+      "title": "Twickl - think twice before buying new clothes!",
+      "buttonText": "SIGN UP|LOG IN"
+  },
+  "deleteModal": {
+      "message": "Do you really want to delete your profile?"
+  },
+  "editModal": {
+      "title": "ACCOUNT DETAILS",
+      "name": "Name",
+      "lastName": "Last name",
+      "username": "Username",
+      "email": "Email",
+      "yourName": "Your name",
+      "yourLastName": "Your Last name",
+      "yourUsername": "Your Username",
+      "yourEmail": "Your Email"
+  },
+  "common": {
+      "yes": "YES",
+      "no": "NO",
+      "submit": "SUBMIT",
+      "cancel": "CANCEL"
+  },
+  "footer": {
+      "description": "We are Twickl MB, based in Lithuania.",
+      "usefulLinks": "Useful links",
+      "contact": "Contact"
+  },
+  "forgotPasswordPopup": {
+      "heading": "Please enter your email, we will send you a password change link.",
+      "toastNotification": "Reset Link Sent!",
+      "Type your E-mail here": "Type your E-mail here"
+  },
+  "aboutus": {
+      "title": "Twickl",
+      "description": "Our platform is for you. You, who wants to sell or buy clothes. We want to make a second-hand clothes your first choice. Buy what you need and sell things, that you don't need.",
+      "startSelling": "START SELLING",
+      "startShopping": "START SHOPPING"
+  },
+  "add": {
+    "sellYourPiece": "SELL YOUR PIECE",
+    "picture": "PICTURE",
+    "upload": "UPLOAD",
+    "titlePlaceholder": "Title",
+    "descriptionPlaceholder": "Describe your item",
+    "pricePlaceholder": "Price €",
+    "selectGender": "Select gender",
+    "men": "Men",
+    "women": "Women",
+    "selectCategory": "Select category",
+    "selectSize": "Select size",
+    "submit": "SUBMIT"
+  },
+    "categories": {
+      "men": {
+        "Shoes": "Shoes",
+        "Bottoms": "Bottoms",
+        "Tops": "Tops",
+        "Suits": "Suits",
+        "Other": "Other"
+      },
+      "women": {
+        "shoes": "Shoes",
+        "bottoms": "Bottoms",
+        "tops": "Tops",
+        "dresses": "Dresses",
+        "other": "Other"
+      }
+    },
+  "REMOVE": "REMOVE",
+  "Your Cart Items": "Your Cart Items",
+  "CONTINUE": "CONTINUE",
+  "CHECKOUT": "CHECKOUT",
+  "Your Cart is Empty": "Your Cart is Empty",
+  "ACCOUNT DETAILS": "ACCOUNT DETAILS",
+  "Name": "Name",
+  "Last name": "Last name",
+  "EDIT": "EDIT",
+  "DELETE": "DELETE",
+  "YOUR ADDED ITEMS": "YOUR ADDED ITEMS",
+  "Sweater": "Sweater",
+  "€ 12": "€ 12",
+  "I bought this sweater, but never wore it.": "I bought this sweater, but never wore it.",
+  "ADD TO CART": "ADD TO CART",
+  "ADDED": "ADDED",
+  "LOG IN": "LOG IN",
+  "SIGN IN": "SIGN IN",
+  "DO NOT REMEMBER THE PASSWORD?": "DO NOT REMEMBER THE PASSWORD?",
+  "CREATE A NEW ACCOUNT": "CREATE A NEW ACCOUNT",
+  "CREATE AN ACCOUNT": "CREATE AN ACCOUNT",
+  "Last Name": "Last Name",
+  "Username": "Username",
+  "Email": "Email",
+  "Password": "Password",
+  "Confirm Password": "Confirm Password",
+  "By creating an account, I consent to the processing of my personal data in accordance with the": "By creating an account, I consent to the processing of my personal data in accordance with the",
+  "PRIVACY POLICY": "PRIVACY POLICY",
+  "CREATE": "CREATE",
+  "productName": {
+      "sweater": "Sweater",
+      "tee": "T-Shirt",
+      "sneakers": "Sneakers",
+      "jeans": "Jeans",
+      "shoes": "Shoes",
+      "dress": "Dress",
+      "pants": "Pants",
+      "shorts": "Shorts"
+  }
+}

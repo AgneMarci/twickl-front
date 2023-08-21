@@ -18,7 +18,7 @@ import product16 from "./assets/16.jpeg";
 export const PRODUCTS = [
     {
         id:1,
-        productName: "Sweater",
+        productNameKey: "Sweater",
         gender: "men",
         price: 12.0,
         description: "I bought this sweater, but never wore it.", 
@@ -26,7 +26,7 @@ export const PRODUCTS = [
     },
     {
         id:2,
-        productName: "T shirt",
+        productNameKey: "Tee",
         gender: "women",
         price: 8.0,
         description: "Bought it in Zara.",
@@ -34,7 +34,7 @@ export const PRODUCTS = [
     },
     {
         id:3,
-        productName: "Sneakers",
+        productNameKey: "Sneakers",
         gender: "men",
         price: 30.0,
         description: "New. Size 44.",
@@ -42,7 +42,7 @@ export const PRODUCTS = [
     },   
     {
         id:4,
-        productName: "Jeans",
+        productNameKey: "Jeans",
         gender: "women",
         price: 8.0,
         description: "Too small for me. I bought it in Reserved",
@@ -50,7 +50,7 @@ export const PRODUCTS = [
     },
     {
         id:5,
-        productName: "T shirt",
+        productNameKey: "Tee",
         gender: "women",
         price: 3.0,
         description: "Very nice.", 
@@ -58,7 +58,7 @@ export const PRODUCTS = [
     },
     {
         id:6,
-        productName: "T shirt",
+        productNameKey: "Tee",
         gender: "men",
         price: 8.0,
         description: "Adidas, a bit dirty",
@@ -66,7 +66,7 @@ export const PRODUCTS = [
     },
     {
         id:7,
-        productName: "T shirt",
+        productNameKey: "Tee",
         gender: "men",
         price: 12.0,
         description: "A bit scratched",
@@ -74,7 +74,7 @@ export const PRODUCTS = [
     },   
     {
         id:8,
-        productName: "Shoes",
+        productNameKey: "Shoes",
         gender: "men",
         price: 8.0,
         description: "Too small for me. I bought it in Versace",
@@ -82,7 +82,7 @@ export const PRODUCTS = [
     },
     {
         id:9,
-        productName: "Dress",
+        productNameKey: "Dress",
         gender: "women",
         price: 25.0,
         description: "I bought it in Italy.", 
@@ -90,7 +90,7 @@ export const PRODUCTS = [
     },
     {
         id:10,
-        productName: "T shirt",
+        productNameKey: "Tee",
         gender: "men",
         price: 8.0,
         description: "Suit suply.",
@@ -98,7 +98,7 @@ export const PRODUCTS = [
     },
     {
         id:11,
-        productName: "Sneakers",
+        productNameKey: "Sneakers",
         gender: "women",
         price: 50.0,
         description: "New, New Balance, size 39",
@@ -106,7 +106,7 @@ export const PRODUCTS = [
     },   
     {
         id:12,
-        productName: "Pants",
+        productNameKey: "Pants",
         gender: "men",
         price: 6.0,
         description: "Reserved",
@@ -114,7 +114,7 @@ export const PRODUCTS = [
     },
     {
         id:13,
-        productName: "Sweater",
+        productNameKey: "Sweater",
         gender: "women",
         price: 12.0,
         description: "I bought this sweater, but never wore it.", 
@@ -122,7 +122,7 @@ export const PRODUCTS = [
     },
     {
         id:14,
-        productName: "T shirt",
+        productNameKey: "Tee",
         gender: "women",
         price: 20.0,
         description: "Bought it in Zara.",
@@ -130,7 +130,7 @@ export const PRODUCTS = [
     },  
     {
         id:15,
-        productName: "Dress",
+        productNameKey: "Dress",
         gender: "women",
         price: 120.0,
         description: "I bought this dress, but never wore it.", 
@@ -138,7 +138,7 @@ export const PRODUCTS = [
     },
     {
         id:16,
-        productName: "Shorts",
+        productNameKey: "Shorts",
         gender: "men",
         price: 20.0,
         description: "Only the old way.",
