@@ -75,11 +75,11 @@ export const Add = () => {
         },
       });
 
-      if (response.status === 200) {
+      if (response.status >= 200 && response.status < 300) {
         console.log('Item uploaded successfully.');
-      } else {
+    } else {
         console.error('Item upload failed.');
-      }
+    }
     } catch (error) {
       console.error('Error submitting the form:', error);
     }

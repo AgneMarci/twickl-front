@@ -32,7 +32,7 @@ export const Signup = () => {
     try {
       const response = await axios.post("http://localhost:8080/register", signupData);
       
-      if (response.status === 200) {
+      if (response.status >= 200 && response.status < 300) {
         console.log("User signed up successfully.");
         navigate("/shop"); 
       } else {

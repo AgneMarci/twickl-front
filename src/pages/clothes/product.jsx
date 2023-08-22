@@ -22,9 +22,9 @@ export const Product = (props) => {
       <div className="imageContainer">
         <img src={productImage} alt="Product" />
         <div className="iconsContainer"> 
-          <NavLink to="/item" className="icon">
+          <NavLink to={`/item/${id}`} className="icon">
             <Search style={{ color: "black", fontSize: "30px" }} />
-          </NavLink>
+         </NavLink>
           <button className="icon" onClick={() => handleAddToCart(id)}>
             <ShoppingCartOutlinedIcon style={{ color: "black", fontSize: "30px" }} />
           </button>

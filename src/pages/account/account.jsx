@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
 import { useTranslation } from 'react-i18next';
 import './account.css'; 
 import profilePicture from '../../assets/profile-picture.png';
@@ -11,8 +12,19 @@ import EditConfirmation from '../../components/editConfirmation/editConfirmation
 
 export const Account = () => {
   const { t } = useTranslation();
+  const [userDetails, setUserDetails] = useState({});
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
+
+  useEffect(() => {
+    axios.get('http://localhost:8080/account-details')
+      .then(response => {
+        setUserDetails(response.data);
+      })
+      .catch(error => {
+        console.error("Error fetching user details:", error);
+      });
+  }, []);
 
   const handleDeleteConfirm = () => {
     console.log("Deleting account...");
@@ -32,19 +44,19 @@ export const Account = () => {
               <tbody>
                 <tr>
                   <td>{t('Name')}</td>
-                  <td>Your name</td>
+                  <td>{userDetails.name}</td>
                 </tr>
                 <tr>
                   <td>{t('Last name')}</td>
-                  <td>Your Last name</td>
+                  <td>{userDetails.lastName}</td>
                 </tr>
                 <tr>
                   <td>{t('Username')}</td>
-                  <td>Your Username</td>
+                  <td>{userDetails.username}</td>
                 </tr>
                 <tr>
                   <td>{t('Email')}</td>
-                  <td>Your Email</td>
+                  <td>{userDetails.email}</td>
                 </tr>
               </tbody>
             </table>

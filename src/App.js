@@ -42,7 +42,7 @@ function App() {
         <Route path="/login" element= {<Login />}/>
         <Route path="/account" element= {<Account />}/>
         <Route path="/add" element= {<Add />}/>
-        <Route path="/item" element= {<Item />}/>
+        <Route path="/item/:productId" element= {<Item />}/>
         <Route path="/cart" element= {<Cart />}/>
         <Route path="/shop" element= {<Shop />} /> 
         <Route path="/women" element= {<Women />} />
